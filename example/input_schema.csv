@@ -1,0 +1,4 @@
+column,start,length
+user_id,0,1
+full_name,2,11
+gender,14,6
