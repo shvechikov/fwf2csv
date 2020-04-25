@@ -1,5 +1,9 @@
-fwf2csv 0.1.0
-Converts fixed-width files (FWF) to comma separated (CSV).
+fwf2csv (0.1.0) - Converts fixed-width files (FWF) to comma separated (CSV).
+
+BUILD AND TRY:
+    > cargo build
+    > cd ./example/
+    > ./run.sh
 
 USAGE:
     fwf2csv <schema>
