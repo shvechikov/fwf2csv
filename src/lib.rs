@@ -27,7 +27,7 @@ fn read_config(schema_file: File) -> Result<Vec<ConfigRecord>, Box<dyn Error>> {
 fn parse_line<'a>(line: &'a [u8], config: &'a Vec<ConfigRecord>) -> impl Iterator<Item = &'a [u8]> {
     config
         .iter()
-        .map(move |f| line[f.start..(f.start + f.length)].trim_end())
+        .map(move |f| line[f.start..(f.start + f.length)].trim())
 }
 
 pub fn parse_gdmi(schema_file: File) -> io::Result<()> {
